@@ -40,7 +40,7 @@ pipeline{
                     steps{
                         sh "whoami"
                         script{
-                            dockerImage = docker.build dockerhub_repo + ":$GIT_COMMIT-build-$BUILD_NUMBER"
+                           sudo dockerImage = docker.build dockerhub_repo + ":$GIT_COMMIT-build-$BUILD_NUMBER"
                         }
                        
                      }    
