@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: fleetms-v2
-          image: shivampateriyaknoldus/test1:v1
+          image: balraj0017/devopsfinal:latest
           ports:
             - containerPort: 8080
           env:   # Setting Environmental Variables
